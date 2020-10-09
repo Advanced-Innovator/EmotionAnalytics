@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vnA-8G-t2i">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web EMPath-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="EMPathViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edu-Wo-5sz">
+                                <rect key="frame" x="20" y="60" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUi-Wi-Pdn">
+                                <rect key="frame" x="104" y="93" width="167" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fUi-Wi-Pdn" secondAttribute="height" multiplier="1:1" id="Q2U-0S-qKH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="edu-Wo-5sz" secondAttribute="trailing" constant="20" id="1l0-ld-gQ5"/>
+                            <constraint firstItem="fUi-Wi-Pdn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rd-ba-1gZ"/>
+                            <constraint firstItem="fUi-Wi-Pdn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="JVc-1k-lHS"/>
+                            <constraint firstItem="fUi-Wi-Pdn" firstAttribute="top" secondItem="edu-Wo-5sz" secondAttribute="bottom" constant="12" id="Vst-hn-ruB"/>
+                            <constraint firstItem="edu-Wo-5sz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="aLA-rk-iUA"/>
+                            <constraint firstItem="edu-Wo-5sz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vto-1J-tWX"/>
+                            <constraint firstItem="edu-Wo-5sz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w4K-Dc-W4D"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Web EMPath" id="nzh-EZ-pTT">
+                        <barButtonItem key="rightBarButtonItem" image="icon_record" id="LwN-9K-ipK">
+                            <connections>
+                                <action selector="recordButtonPressed:" destination="BYZ-38-t0r" id="01A-k6-Mtt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="actionLabel" destination="edu-Wo-5sz" id="3yY-AK-clx"/>
+                        <outlet property="imageView" destination="fUi-Wi-Pdn" id="2A1-rC-wRr"/>
+                        <outlet property="recordButton" destination="LwN-9K-ipK" id="1ax-cv-U46"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884" y="1913"/>
+        </scene>
+        <!--Web EMPath-->
+        <scene sceneID="xOy-2v-MmF">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePu-hI-9ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vnA-8G-t2i" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Web EMPath" image="WebEMPath" id="b11-S8-cCZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4IN-Wo-rt4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pIB-5w-3t4"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1884" y="1156"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WebEMPath" width="25" height="25"/>
+        <image name="icon_record" width="30" height="30"/>
+    </resources>
+</document>
