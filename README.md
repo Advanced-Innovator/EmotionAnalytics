@@ -4,7 +4,7 @@ An iOS app to detect emotion from vocal data using the emotion recognition progr
 ![Emotion Analysis](demo.png)
 
 ## Required Library
-PNChart (https://github.com/kevinzhow/PNChart)
+[PNChart](https://github.com/kevinzhow/PNChart)
 
 ## Empath API Integration
 1. Sign up for an api key from [Empath](https://webempath.net)
